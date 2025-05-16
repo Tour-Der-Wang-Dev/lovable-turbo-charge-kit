@@ -1,73 +1,125 @@
-# Welcome to your Lovable project
 
-## Project info
+# Lovable Studio - Productivity Platform
 
-**URL**: https://lovable.dev/projects/2f68e6da-2b83-43cc-9422-2977f44e579e
+![Lovable Studio](https://lovable.dev/opengraph-image-p98pqg.png)
 
-## How can I edit this code?
+An AI-powered productivity platform featuring voice input, project management, and SEO tools built with React, TypeScript, and Tailwind CSS.
 
-There are several ways of editing your application.
+## 🚀 Features
 
-**Use Lovable**
+- **Voice Input**: Real-time voice-to-text transcription
+- **AI Model Integration**: Support for Groq's high-performance models like LLaMA 3.3 70B
+- **Prompt Library**: Store and organize your favorite prompts
+- **Project Management**: Create and organize projects with folders
+- **SEO Tools**: Generate and validate meta tags
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/2f68e6da-2b83-43cc-9422-2977f44e579e) and start prompting.
+## 🛠️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend**: React with TypeScript
+- **Styling**: Tailwind CSS with shadcn/ui components
+- **Routing**: React Router
+- **State Management**: React Query
+- **Backend**: Supabase (authentication, database, storage)
+- **Build Tool**: Vite
 
-**Use your preferred IDE**
+## 🏁 Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js & npm (recommended to install with [nvm](https://github.com/nvm-sh/nvm#installing-and-updating))
+- Supabase account (for backend features)
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. Clone the repository:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```bash
+git clone <repository-url>
+cd lovable-studio
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
+2. Install dependencies:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+npm install
+```
+
+3. Set up environment variables:
+   
+Create a `.env` file in the project root with the following variables:
+
+```
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+4. Start the development server:
+
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+5. Open [http://localhost:8080](http://localhost:8080) in your browser.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🧪 Testing
 
-**Use GitHub Codespaces**
+Run tests with:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm test
+```
 
-## What technologies are used for this project?
+## 📦 Build
 
-This project is built with:
+Create a production build with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```bash
+npm run build
+```
 
-## How can I deploy this project?
+## 🤝 Contributing
 
-Simply open [Lovable](https://lovable.dev/projects/2f68e6da-2b83-43cc-9422-2977f44e579e) and click on Share -> Publish.
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes
+4. Run tests and linting to ensure quality
+5. Commit your changes (`git commit -m 'Add some amazing feature'`)
+6. Push to the branch (`git push origin feature/amazing-feature`)
+7. Open a Pull Request
 
-## Can I connect a custom domain to my Lovable project?
+### Code Style Guidelines
 
-Yes, you can!
+- Follow the existing code style
+- Write meaningful commit messages
+- Add JSDoc comments to functions
+- Keep components small and focused
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📝 License
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 👥 Project Structure
+
+The project follows a feature-based organization:
+
+- `src/components/features/`: Feature-specific components
+- `src/components/ui/`: Reusable UI components (shadcn/ui)
+- `src/components/layout/`: Layout components (Navbar, Sidebar)
+- `src/pages/`: Application pages
+- `src/hooks/`: Custom React hooks
+- `src/integrations/`: External service integrations (Supabase)
+
+See `filesExplainer.md` for a detailed breakdown of all project files.
+
+## 📊 System Architecture
+
+Refer to the system diagram in the `architecture.md` file for a visual representation of how different components interact.
+
+## 🙏 Acknowledgements
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Supabase](https://supabase.io/)
+- [Vite](https://vitejs.dev/)
